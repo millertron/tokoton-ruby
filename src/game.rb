@@ -1,8 +1,8 @@
-require 'gosu'
+require_relative 'game_window'
 
 class Game
 	def initialize
-		@main_window = Gosu::Window.new(800, 600, false)
+		@main_window = GameWindow.new 800, 600
 	end
 	
 	def start
